@@ -1,0 +1,44 @@
+<idea-plugin>
+  <id>com.linsir</id>
+  <name>git-commit-emoji</name>
+  <version>1.0</version>
+  <vendor email="linsir678@gmail.com" url="https://github.com/linsir6/git-commit-emoji">git-commit-emoji</vendor>
+
+  <description><![CDATA[
+      一款JetBrains系列工具插件，让我们的commit可以自动生成表情，更加丰富有趣，分类清晰，易懂,支持IDEA,WebStorm,AndroidStudio,PyCharm,CLoin,GoLand,PhpStorm等等.<br>
+
+        目前已支持表情：http://119.28.180.234:3000/
+        </br>
+        如果您想增加更多表情，欢迎直接在项目中提issue告诉我，或者加我的qq:476671079,微信:gwl476671079
+
+
+    ]]></description>
+
+  <change-notes><![CDATA[
+      v1.0:第一版.<br>
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <depends>com.intellij.modules.lang</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <completion.contributor language="TEXT"
+                            order="first, before commitCompletion"
+                            implementationClass="com.linsir.GitCommitEmojiEngine"/>
+  </extensions>
+
+  <actions>
+
+  </actions>
+
+</idea-plugin>
