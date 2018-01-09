@@ -4,6 +4,19 @@
 
 安装该插件后，在提交代码的时候，会自动提示应该输入的表情.
 
+示例:
+
+![](https://ws4.sinaimg.cn/large/006tNbRwly1fnaou84md0g30l60l44qq.gif)
+
+
+安装:
+
+项目根目录下有一个文件:git-commit-emoji.jar
+
+下载到本地后，打开Preference如下图:
+
+![](https://ws2.sinaimg.cn/large/006tNbRwly1fnaox0qjpyj31iw11awgi.jpg)
+
 目前支持表情:
 
 ```
